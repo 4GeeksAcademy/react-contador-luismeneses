@@ -15,6 +15,7 @@ const Home = () => {
 		const interval = setInterval(() => {
 			setCounterSecond(prev => prev + 1);
 		}, 1000);
+		return () => clearInterval(interval);
 	}, []);
 
 
